@@ -1,0 +1,104 @@
+body{
+    background: #ccc;
+    font-family: Arial,  sans-serif;
+    margin: 0;
+    
+}
+
+.hero{
+    background-image: url(../imagens/bg-3.jpg);
+    height: 500px;
+    background-position: right center;
+    /*  colocar para aparecer toda a imagem "cover";    */
+    background-size: cover;
+    border-top: 1px solid transparent;
+}
+.hero nav li{
+    /*  vai transformar em blocos de linha; OBS: se fosse só block iria quebrar linha.  */
+    display: inline-block;
+    /*  vai tirar os ponto que o "li" deixa;    */
+    list-style: none;
+    /*  "border: é a borda completa";  "groove: estilo(tipo) da linha"; "5px: tamanho"; "#333: cor da linha";   */
+    border: 1px solid white;
+    
+    
+
+}
+
+.hero nav a{
+    /*  cor do fundo;   */
+    background: rgba(0, 0, 0, 0.300);
+    /*  transforma em bloco; OBS: todo bloco quebra linha;   */
+    display: block;
+    padding: 10px;
+    /*  coloca cor; */
+    color: white;
+    /*  tira o sublinhado do texto; */
+    text-decoration: none;
+    /*  coloca todo o texto em maiúsculo;   */
+    text-transform: uppercase;
+    /*  tamanho da fonte    */
+    font-size: 14px;
+    /*  coloca espaço entre as letras   */
+    letter-spacing: 2px;
+    
+}
+
+.hero nav ul{
+    text-align: right;
+    /*  medidas do margin: "top: 50 ^"; - "right: 100 >"; - "down: 0 \/"; - "left: 0 <"; */
+    margin: 50px 100px 0 0;
+
+    
+    
+}
+
+.hero-content{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.hero-content h1{
+    text-transform: uppercase;
+    font-size: 46px;
+    
+    /*  1 valor: deslocamento x, 2 valor: deslocamento y, 3 valor: representa o esfumaçamento, 4 valor: cor;    */
+    text-shadow: 3px 3px 2px #333;
+}
+.hero-content p{
+    background-color: rgba(51, 51, 51, 0.600);
+    padding: 15px;
+    border-bottom:groove 4px black; 
+    
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.content-section{
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.content-section h2{
+    background-color: rgba(51, 51, 51, 0.247);
+    padding: 15px;
+    margin: 0px;
+
+}
+
+.content-footer{
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.300);
+    padding: 3px;
+    text-shadow: 3px 3px 3px black;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
