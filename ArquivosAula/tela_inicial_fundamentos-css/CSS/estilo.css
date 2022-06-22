@@ -20,9 +20,7 @@ body{
     list-style: none;
     /*  "border: é a borda completa";  "groove: estilo(tipo) da linha"; "5px: tamanho"; "#333: cor da linha";   */
     border: 1px solid white;
-    
-    
-
+    margin-left: 10px;
 }
 
 .hero nav a{
@@ -44,10 +42,14 @@ body{
     
 }
 
+.hero nav a:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .hero nav ul{
     text-align: right;
     /*  medidas do margin: "top: 50 ^"; - "right: 100 >"; - "down: 0 \/"; - "left: 0 <"; */
-    margin: 50px 100px 0 0;
+    margin: 20px 100px 0 0;
 
     
     
@@ -57,6 +59,7 @@ body{
     text-align: center;
     color: white;
     margin-top: 50px;
+    display: block;
 }
 
 .hero-content h1{
@@ -69,8 +72,37 @@ body{
 .hero-content p{
     background-color: rgba(51, 51, 51, 0.600);
     padding: 15px;
-    border-bottom:groove 4px black; 
+    border-bottom:groove 2px white; 
+    display:inline-block;
     
+}
+
+.card{
+    width: 32%;
+    float: left;
+    box-sizing: border-box;
+    
+}
+
+.card-1 {
+    margin-right: 2%;
+}
+
+.card-2{
+    margin-right: 2%;
+}
+
+.card p{
+    background-color: rgb(107, 101, 101);
+    color: white;
+    margin: 0;
+    padding:15px;
+    text-transform: uppercase;
+}
+
+.card img {
+    display: block;
+    width: 100%;
 }
 main{
     width: 80%;
@@ -81,6 +113,7 @@ main{
     background-color: white;
     padding: 15px;
     margin-top: 15px;
+    overflow: auto;
 }
 
 .content-section h2{
