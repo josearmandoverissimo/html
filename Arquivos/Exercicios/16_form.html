@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como criar um formulário</title>
+</head>
+
+<body>
+    <h1>Exemplo de formulario</h1>
+    <!-- FORM: criar formulário -->
+    <form action="http://google.com/search" method="GET">
+        <!-- responsável por criar o grupo para colocar todos inputs e label dentro. -->
+        <fieldset>
+            <!-- título do input -->
+            <legend>DIGITE SUA BUSCA</legend>
+            <!-- LABEL onde o texto é digitado; como também linkado ao input. dentro do *for=""* vai colocar o nome do id; no input coloca *id=""*, e o nome que foi colocado no label.-->
+            <label for="txtbusca">Faça uma busca</label>
+            <!-- type diz o tipo de entrada de dado, e abaixo a gente vai incluir "text" -->
+            <input type="text" name="q" id="txtbusca">
+            <!-- botão submit que significa: "enviar" Value: é o texto que vai aparecer no botão.-->
+            <input type="submit" value="ok">
+        </fieldset>
+
+
+    </form>
+</body>
+
+</html>

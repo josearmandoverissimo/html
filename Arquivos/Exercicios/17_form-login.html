@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de login</title>
+
+    <style>
+        .formLogin {
+            width: 250px;
+            margin: 50px auto 0;
+            font-family: sans-serif;
+        }
+
+        /* ver depois o que é box-sizing:border-box */
+       #txtlogin, #txtsenha, .btn {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 15px;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+        }
+
+        .formLogin legend{
+            background: white;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        #txtlogin, #txtsenha{
+            background: #ddd;
+        }
+
+        #txtlogin:focus, #txtsenha:focus{
+            background: white;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #txtlogin{
+            margin-bottom: 15px;
+        }
+
+        .formLogin label{
+            margin-top: 15px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .formLogin fieldset{
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- action vai ser aonde vai ser enviado o a resposta do formulário.  -->
+    <!-- método get vai ser o responsável por enviar pelo http -->
+    <!-- caso queira enviar para a parte do backend é utilizado o "post" no lugar do "get" -->
+    <form action="#" method="POST" class="formLogin">
+        <!-- fieldset responsável pro agrupar o formulário. -->
+        <fieldset>
+            <!-- Título do formulário -->
+            <legend>Login</legend>
+            <!-- o *for=""* tá conectado com o *id=""* -->
+            <label for="txtlogin">Digite seu login: </label>
+            <!-- atributo "autofocus" faz com que quando a página for aberta já fique pronto para digitar-->
+            <input type="text" name="login" id="txtlogin" autofocus>
+            <label for="txtsenha">Digita sua senha: </label>
+            <input type="password" name="senha" id="txtsenha">
+            <input type="submit" value="Logar" class="btn"></input>
+
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

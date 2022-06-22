@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos tipos de input</title>
+
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="">E-mail</label>
+            <!-- OBS: "required" faz o campo ser obrigatorio. -->
+            <!-- PLACEHOLDER: vai colocar um texto na barra que vai ser preenchida, mas assim que você começar a digitar ele vai sumir. -->
+            <input type="email" required placeholder="digite seu E-MAIL">
+            <br>
+            <label for="">Numero de filhos</label>
+            <!-- atributo *min=""* vai dizer que pode ter no mínimo 0 filhos. evitando ocorrer números negativos-->
+            <input type="number" min="0">
+            <br>
+            <label for="nascimento"></label>
+            <!-- também pode ser adicionado o limite min/max. o padrão é dos EUA, Exemplo: 2018-01-01. -->
+            <input type="date" min="2008-0130" max="2120-01-30">
+            <br>
+            <p>SEXO</p>
+            <!-- para colocar o radio sem erro e marcar apenas um, utiliza-se o mesmo nome em ambos. -->
+            <!-- *value="M"* vai ser o que o servidor vai receber: name=M-->
+            <!-- OBS: colocando o input dentro do label e tirando o parâmetro *for=""* do mesmo, é possivel clicar e selecionar a opção clicando no nome também.-->
+            <label>
+                <input type="radio" name="sexo" id="" value="M">
+                Masculino
+            </label>
+            <label>
+                <input type="radio" name="sexo" id="" value="F">
+                Feminino
+            </label>
+            <br>
+            <label>
+                <!-- select é usado quando se tem várias opções para o usuário escolher. -->
+                <select name="Estado">
+                    <option value="0">Selecione</option>
+                    <option value="SP">São paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Área de interesse</legend>
+            <!-- no checkbox ele vai fazer as caxinhas com várias opções possíveis para o usuário poder estar selecionando. -->
+            <label>
+                <!-- OBS: o input não precisa de tag de fechamento -->
+                <input type="checkbox" name="html" value="html">
+                html
+            </label>
+
+            <label>
+                <input type="checkbox" name="css" value="css">
+                CSS
+            </label>
+
+            <label>
+                <input type="checkbox" name="JavaScript" value="JS">
+                JavaScript
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+            <!-- OBS: A TAG: "textarea" precisa de tag de fechamento. -->
+            <!-- OBS: - COLS: é o número de colunas; ROWS: os números de linhas; -->
+            <!-- OBS: A TAG: resize que é utilizada no CSS faz com que o usuário não consiga mudar o tamanho do textarea. -->
+            <!-- OBS: MAXLENGTH: determina a quantidade maxima de caractere que pode ser selecionada. -->
+            <textarea name="" id="" cols="30" rows="10" style="resize: none;" maxlength="100"></textarea>
+
+            <!-- OBS: A TAG: readonly: significa somente leitura. então o usuário não vai conseguir ter acesso para fazer alterações. -->
+            <textarea name="" id="" cols="30" rows="10" style="resize: none;" readonly>Aqui entra o texto do contrato.
+            </textarea>
+
+            <label>
+                <input type="checkbox">Li e Aceito.
+            </label>
+            <!-- RANGE: trabalha em conjunto com os seguintes atributos: min, max e step -->
+            <!-- STEP: ele pula de 1 em 1; você que escolhe de quanto em quanto ele tem que pular. -->
+            <input type="range" min="0" max="10" step="1">
+            <input type="time">
+            <input type="color">
+
+        </fieldset>
+        <!-- Envia o Formulário. -->
+        <input type="submit" value="submit">
+        <!-- é usado para ser tratado com JS -->
+        <input type="button" value="button">
+        <!-- vai resetar texto digitado. -->
+        <input type="reset" value="reset">
+        <!--  -->
+        <input type="reset" value="reset">
+
+
+    </form>
+
+</body>
+
+</html>
